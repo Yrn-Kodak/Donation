@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Wide Donations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION WITH NAV -->
+<header class="hero-section">
+    <nav class="navbar">
+      <!-- Add your logo and links here -->
+      <a href="#" class="logo">YourLogo</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <div class="hero-text">
+      <h1><span id="typewriter"></span></h1>
+      <p class="impact-message">Your donation helps change lives.</p>
+    </div>
+  
+    <a href="https://wa.me/+13474508469?text=Hi%20I'm%20interested%20in%20donating!" 
+       class="whatsapp-dm-btn"
+       target="_blank">
+      Chat with Us on WhatsApp
+    </a>
+  </header>
+  
+
+    
+
+  <!-- CALL TO ACTION -->
+  <section id="hero">
+    <h2>Together, we make a difference</h2>
+    <p>Your donation helps change lives.</p>
+    <a href="#donate" class="btn">Donate Now</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a nonprofit helping underprivileged communities through education, food programs, and healthcare.</p>
+  </section>
+
+  <!-- CAUSES -->
+  <section id="causes">
+    <h2>Our Causes</h2>
+    <ul>
+      <li>📚 Education for all</li>
+      <li>🍲 Feeding the hungry</li>
+      <li>💊 Access to healthcare</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="aa.avif" alt="Community Event 1">
+      </div>
+      <div class="gallery-item">
+        <img src="ss.avif" alt="Community Event 2">
+      </div>
+      <div class="gallery-item">
+        <img src="qq.avif" alt="Community Event 3">
+      </div>
+      <div class="gallery-item">
+        <img src="cam.webp" alt="Volunteer Helping">
+      </div>
+      <div class="gallery-item">
+        <img src="ean.avif" alt="Health Program">
+      </div>
+      <div class="gallery-item">
+        <img src="fam.avif" alt="Family Receiving Aid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded Image">
+  </div>
+
+  <!-- DONATE FORM -->
+  <section id="donate">
+    <h2>Donate Now</h2>
+    <form id="donation-form" action="your-backend-endpoint" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="amount">Donation Amount ($):</label>
+      <input type="number" id="amount" name="amount" required>
+
+      <button type="submit">Donate</button>
+    </form>
+    <p id="thanks-msg" style="display:none;">Thank you for your support!</p>
+  </section>
+
+  <!-- OTHER PAYMENT METHODS -->
+  <section class="payment-options">
+    <h2>Other Ways to Donate</h2>
+    <div class="payment-method">
+      <img src="cc1.png" style="height:30px; width:30px;" alt="Cash App" />
+      <p><strong>Cash App:</strong> $Pamlynn75</p>
+    </div>
+
+    <div class="payment-method">
+      <img src="bitcoin.jpg" alt="Bitcoin" style="height:200px; width:200px;" />
+      <p><strong>Bitcoin Address:</strong> 1Edx87pMifEkoAfHqTb54ixLMNkogGVfrt</p>
+      <p>Scan the QR code to donate using Bitcoin!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: yrnkodakm@gmail.com</p>
+    <p>Phone: +123-456-7890</p>
+  </section>
+
+  <!-- THANK YOU POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>World Wide Donations</h3>
+            <p>Empowering communities through food, education, and healthcare. Together, we make a difference.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#causes">Our Work</a></li>
+              <li><a href="#donate">Donate</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h4>  Contact Us</h4>
+            <p>Email: yrnkodakm@gmail.com</p>
+            <p>Phone: +123-456-7890</p>
+            <div class="footer-socials">
+              <a href="https://facebook.com" target="_blank">Facebook</a> |
+              <a href="https://wa.me/+13474508469" target="_blank">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Workd Wide Donations. All rights reserved.</p>
+        </div>
+      </footer>
+      

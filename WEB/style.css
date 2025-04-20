@@ -1,0 +1,384 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+    color: #128c7e;
+  }
+  
+ 
+  
+  /* Call to Action Section */
+  #hero {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+  }
+  
+  #hero .btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.25em;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  #hero .btn:hover {
+    background-color: #e04141;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 50px 20px;
+    margin: 20px 0;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* About Section */
+  #about p {
+    font-size: 1.2em;
+  }
+  
+  /* Causes Section */
+  #causes ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #causes li {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+  
+  /* Gallery */
+  #gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  #gallery .gallery-item {
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Donate Form */
+  #donate form {
+    max-width: 200 px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #donate label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+  }
+  
+  #donate input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #donate button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #donate button:hover {
+    background-color: #e04141;
+  }
+  
+  #thanks-msg {
+    text-align: center;
+    font-size: 1.25em;
+    color: #28a745;
+  }
+  
+  /* Payment Options */
+  .payment-options {
+    background-color: #767070;
+  }
+  
+  .payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-method img {
+    margin-right: 15px;
+  }
+  
+  .payment-method p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .payment-method strong {
+    font-weight: bold;
+  }
+  
+  /* Contact Section */
+  #contact p {
+    font-size: 1.2em;
+    color: #3f23a5;
+  }
+  
+  /* Donation Progress */
+  #donation-progress {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #donation-progress h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  #progress-bar-container {
+    background-color: #ddd;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  #progress-bar {
+    background-color: #28a745;
+    width: 0;
+    height: 100%;
+    transition: width 1s ease;
+  }
+  
+  #donation-amount {
+    font-size: 1.5em;
+  }
+  
+  /* Share Section */
+  #share {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  #share h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-button img {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+  }
+  
+  .social-button {
+    display: inline-block;
+  }
+  
+  .social-button:hover {
+    opacity: 0.7;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.1em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding-top: 30px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2em;
+    }
+  
+    .hero-text .impact-message {
+      font-size: 1em;
+    }
+  
+    .gallery-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .gallery-item {
+      width: 100%;
+    }
+  
+    .payment-method {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #donate form {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #donate button {
+      width: 100%;
+    }
+  
+    .social-buttons {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      padding-top: 20px;
+    }
+  
+    .hero-text h1 {
+      font-size: 1.5em;
+    }
+  
+    .hero-text .impact-message {
+      font-size: 0.9em;
+    }
+  }
+  .site-footer {
+    background: #053045;
+    color: #ffffff;
+    padding: 3rem 1rem 1rem;
+    font-size: 0.9em;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1 1 250px;
+    margin: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-links a,
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover,
+  .footer-contact a:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+  }
+  
+  .footer-socials a {
+    margin-right: 10px;
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #ffffff33;
+    margin-top: 2rem;
+    font-size: 0.85em;
+  }
+  
